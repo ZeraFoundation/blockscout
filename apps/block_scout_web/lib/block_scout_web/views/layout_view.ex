@@ -10,11 +10,11 @@ defmodule BlockScoutWeb.LayoutView do
     #   title: "POA",
     #   url: "https://blockscout.com/poa/core"
     # },
-    %{
-      title: "Zera Testnet",
-      url: "https://blockscout.com/poa/sokol",
-      test_net?: true
-    }
+    # %{
+    #   title: "Sokol",
+    #   url: "https://blockscout.com/poa/sokol",
+    #   test_net?: true
+    # },
     # %{
     #   title: "Gnosis Chain",
     #   url: "https://blockscout.com/xdai/mainnet"
