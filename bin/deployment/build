@@ -4,7 +4,7 @@ set -e
 
 cd /opt/app || exit 1
 
-export HOME=/home/ec2-user
+export HOME=/home/ubuntu
 export MIX_ENV=prod
 
 source /etc/environment
@@ -21,6 +21,6 @@ pushd apps/explorer || exit 1
 npm install
 popd
 
-chown -R ec2-user:ec2-user /opt/app
+chown -R ubuntu:ubuntu /opt/app
 
 exit 0
