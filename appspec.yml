@@ -11,7 +11,7 @@ hooks:
     - location: bin/deployment/build
   ApplicationStart:
     - location: bin/deployment/migrate
-      runas: ec2-user
+      runas: ubuntu
       timeout: 300
     - location: bin/deployment/start
       timeout: 3600
