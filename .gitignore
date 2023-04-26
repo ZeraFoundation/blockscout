@@ -9,8 +9,6 @@
 /*.ez
 /logs
 
-.env
-
 # mix dialyzer artifacts
 /priv/plts
 

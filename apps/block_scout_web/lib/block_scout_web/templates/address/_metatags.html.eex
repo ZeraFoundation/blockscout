@@ -1,8 +1,9 @@
 <%= if assigns[:address] do %>
   <title>
     <%= gettext(
-          "%{address} - %{subnetwork} Explorer",
+          "%{address} - %{network} %{subnetwork} Explorer",
           address: BlockScoutWeb.AddressView.address_page_title(@address),
+          network: LayoutView.network_title(),
           subnetwork: LayoutView.subnetwork_title()
         ) %>
   </title>

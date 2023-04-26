@@ -10,15 +10,15 @@ defmodule BlockScoutWeb.LayoutView do
     #   title: "POA",
     #   url: "https://blockscout.com/poa/core"
     # },
-    # %{
-    #   title: "Sokol",
-    #   url: "https://blockscout.com/poa/sokol",
-    #   test_net?: true
-    # },
+    %{
+      title: "Testnet",
+      url: "#",
+      test_net?: true
+    },
     # %{
     #   title: "Gnosis Chain",
     #   url: "https://blockscout.com/xdai/mainnet"
-    # },
+    # }б
     # %{
     #   title: "Ethereum Classic",
     #   url: "https://blockscout.com/etc/mainnet",
@@ -46,11 +46,11 @@ defmodule BlockScoutWeb.LayoutView do
   end
 
   def subnetwork_title do
-    Keyword.get(application_config(), :subnetwork) || "Sokol"
+    Keyword.get(application_config(), :subnetwork) || "Testnet"
   end
 
   def network_title do
-    Keyword.get(application_config(), :network) || "POA"
+    Keyword.get(application_config(), :network) || "ZERA"
   end
 
   defp application_config do
