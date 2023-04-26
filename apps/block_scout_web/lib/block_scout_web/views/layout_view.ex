@@ -12,7 +12,7 @@ defmodule BlockScoutWeb.LayoutView do
     # },
     %{
       title: "Testnet",
-      url: "#",
+      url: "",
       test_net?: true
     },
     # %{
