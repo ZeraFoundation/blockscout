@@ -118,4 +118,6 @@ $footer-logo-width: auto !default;
 
 .footer-brand {
   text-decoration: none !important;
+  display: flex;
+  align-items: center;
 }

@@ -10,7 +10,7 @@ $header-textfield-text-color: $header-links-color !default;
 $header-textfield-background-color: #f5f6fa !default;
 $header-textfield-magnifier-color: $header-links-color !default;
 $header-link-horizontal-padding: 0.71rem;
-$navbar-logo-height: auto !default;
+$navbar-logo-height: 28px;
 $navbar-logo-width: 100% !default;
 
 .navbar.navbar-primary {
@@ -241,6 +241,7 @@ $navbar-logo-width: 100% !default;
   margin-left: 0;
   flex-shrink: 1;
   display: inline-flex;
+  align-items: center;
   .navbar-logo {
     max-width: 100%;
   }
@@ -252,10 +253,11 @@ $navbar-logo-width: 100% !default;
 }
 
 .logo-text {
-  color: $header-links-color;
+  color: rgb(98, 56, 66);
+  font-family: "Kade";
   font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 5px;
+  font-weight: 800;
+  margin-left: 14px;
   line-height: 28px;
 
   &.in-footer {

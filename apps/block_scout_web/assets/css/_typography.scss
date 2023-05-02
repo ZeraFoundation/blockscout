@@ -128,3 +128,15 @@ textarea.form-control {
 [data-internal-transaction-type="Suicide"] {
   color: $danger;
 }
+
+@font-face {
+  font-family: "Kade";
+  src: url("fonts/kade-regular.woff") format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kade";
+  src: url("fonts/kade-bold.woff") format('woff');
+  font-weight: bold;
+}
