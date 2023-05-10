@@ -16,6 +16,10 @@ $footer-logo-width: auto !default;
   padding: 40px 0;
   position: relative;
 
+  .footer-body {
+    color: white;
+  }
+
   @media (max-width: $breakpoint-md) {
     width: 100%;
   }
