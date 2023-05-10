@@ -22,10 +22,10 @@ defmodule BlockScoutWeb.CSPHeader do
         connect-src 'self' #{json_rpc_url} #{config[:mixpanel_url]} #{config[:amplitude_url]} #{websocket_endpoints(conn)} #{czilladx_url} #{trustwallet_url} #{walletconnect_urls};\
         default-src 'self';\
         script-src 'self' 'unsafe-inline' 'unsafe-eval' #{coinzillatag_url} #{google_url} https://www.gstatic.com;\
-        style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com;\
+        style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://use.typekit.net https://p.typekit.net;\
         img-src 'self' * data:;\
         media-src 'self' * data:;\
-        font-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.gstatic.com data:;\
+        font-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.gstatic.com https://use.typekit.net data:;\
         frame-src 'self' 'unsafe-inline' 'unsafe-eval' #{czilladx_url} #{google_url};\
       "
     })

@@ -10,7 +10,7 @@ $header-textfield-text-color: $header-links-color !default;
 $header-textfield-background-color: #f5f6fa !default;
 $header-textfield-magnifier-color: $header-links-color !default;
 $header-link-horizontal-padding: 0.71rem;
-$navbar-logo-height: 28px;
+$navbar-logo-height: 33px;
 $navbar-logo-width: 100% !default;
 
 .navbar.navbar-primary {
@@ -254,7 +254,6 @@ $navbar-logo-width: 100% !default;
 
 .logo-text {
   color: rgb(98, 56, 66);
-  font-family: "Kade";
   font-size: 1.2rem;
   font-weight: 800;
   margin-left: 14px;
