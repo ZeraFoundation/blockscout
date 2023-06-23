@@ -19,7 +19,8 @@
 
     <div class="row">
       <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.") %></p>
+        <p class="footer-info-text"><%= gettext("ZERA Explorer is a tool for inspecting and analyzing EVM based ZERA blockchain.") %></p>
+        <!--
         <div class="footer-social-icons">
           <a href="<%= Application.get_env(:block_scout_web, :footer)[:github_link] %>" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>
@@ -31,8 +32,10 @@
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
         </div>
+        -->
       </div>
 
+      <!--
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
         <h3>BlockScout</h3>
         <ul>
@@ -81,14 +84,14 @@
           </ul>
         </div>
       <% end %>
+      -->
     </div>
 
     <% version = version() %>
 
     <%= unless ignore_version?(version) do %>
-      <% release_link = release_link(version) %>
       <div>
-        <%= gettext("Version") %>: <%= release_link %>
+        <%= gettext("Version") %>: <%= version %>
       </div>
     <% end %>
   </div>

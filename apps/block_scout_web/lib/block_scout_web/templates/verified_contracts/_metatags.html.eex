@@ -1,6 +1,7 @@
 <title>
   <%= gettext(
-        "Verified contracts - %{subnetwork} Explorer",
+        "Verified contracts - %{network} %{subnetwork} Explorer",
+        network: BlockScoutWeb.LayoutView.network_title(),
         subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
     ) %>
 </title>

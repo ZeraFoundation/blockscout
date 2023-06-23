@@ -10,7 +10,7 @@ $header-textfield-text-color: $header-links-color !default;
 $header-textfield-background-color: #f5f6fa !default;
 $header-textfield-magnifier-color: $header-links-color !default;
 $header-link-horizontal-padding: 0.71rem;
-$navbar-logo-height: auto !default;
+$navbar-logo-height: 33px;
 $navbar-logo-width: 100% !default;
 
 .navbar.navbar-primary {
@@ -137,7 +137,7 @@ $navbar-logo-width: 100% !default;
     width: 100%;
     z-index: 1;
 
-    &[placeholder]{
+    input:placeholder-shown{
       text-overflow: ellipsis !important;
     }
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -157,15 +157,15 @@ $navbar-logo-width: 100% !default;
       box-shadow: none;
     }
 
-    @include media-breakpoint-up(xl) {
-      width: 290px;
+    // @include media-breakpoint-up(xl) {
+    //   width: 290px;
+    // }
+    @media (min-width: 993px) {
+      width: 520px;
     }
-    @media (min-width: 1366px) {
-      width: 380px;
-    }
-    @media (min-width: 1540px) {
-      width: 550px;
-    }
+    // @media (min-width: 1200px) {
+    //   width: 550px;
+    // }
   }
   .input-group-append {
     height: 38px;
@@ -241,6 +241,7 @@ $navbar-logo-width: 100% !default;
   margin-left: 0;
   flex-shrink: 1;
   display: inline-flex;
+  align-items: center;
   .navbar-logo {
     max-width: 100%;
   }
@@ -252,10 +253,10 @@ $navbar-logo-width: 100% !default;
 }
 
 .logo-text {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-left: 5px;
+  color: rgb(98, 56, 66);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-left: 14px;
   line-height: 28px;
 
   &.in-footer {

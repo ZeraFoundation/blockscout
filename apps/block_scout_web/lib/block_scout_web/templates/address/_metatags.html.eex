@@ -1,8 +1,9 @@
 <%= if assigns[:address] do %>
   <title>
     <%= gettext(
-          "%{address} - %{subnetwork} Explorer",
+          "%{address} - %{network} %{subnetwork} Explorer",
           address: BlockScoutWeb.AddressView.address_page_title(@address),
+          network: LayoutView.network_title(),
           subnetwork: LayoutView.subnetwork_title()
         ) %>
   </title>
@@ -10,6 +11,6 @@
   <meta name="keywords" content="<%= BlockScoutWeb.AddressView.address_page_title(@address) <> ", " <> Explorer.coin() <> ", "<> LayoutView.network_title() %>">
 <% else %>
   <title>
-    <%= gettext "Top Accounts - %{subnetwork} Explorer", subnetwork: LayoutView.subnetwork_title() %>
+    <%= gettext "Top Accounts - %{network} %{subnetwork} Explorer", network: LayoutView.network_title(), subnetwork: LayoutView.subnetwork_title() %>
   </title>
 <% end %>

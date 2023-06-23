@@ -10,7 +10,7 @@ $dashboard-line-color-market: $secondary !default;
 $dashboard-line-color-market-dark-theme: $secondary !default;
 $dashboard-line-color-transactions: $warning !default;
 $dashboard-line-color-transactions-dark-theme: $warning !default;
-$dashboard-stats-item-label-color: #fff !default;
+$dashboard-stats-item-label-color: #fff;
 $dashboard-stats-item-value-color: rgba(#fff, 0.8) !default;
 $dashboard-banner-chart-legend-label-color: #fff !default;
 $dashboard-banner-chart-legend-value-color: $dashboard-stats-item-value-color !default;
@@ -139,7 +139,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 
     &.gas-price-oracle {
       &::before {
-        background-color: $dashboard-line-color-price;
+        background-color: $dashboard-line-color-transactions;
       }
     }
 
@@ -157,7 +157,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   }
 
   .dashboard-banner-chart-legend-label {
-    color: $dashboard-banner-chart-legend-label-color;
+    color: $dashboard-stats-item-label-color;
     display: block;
     font-size: 12px;
     font-weight: 600;
